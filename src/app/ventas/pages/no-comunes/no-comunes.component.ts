@@ -16,7 +16,7 @@ export class NoComunesComponent {
   bandera:string = 'macho';
 
   //i18nPlural
-  clientes: string[] = ['k','g','c','h','g','h'];
+  clientes: string[] = ['Juan','Pepe','Maria','Juan','Pepe','Maria'];
   clientesMap: any = {
     '=0': 'no tenemos ningun cliente esperando.',
     '=1':'tenemos un cliente esperando.',
