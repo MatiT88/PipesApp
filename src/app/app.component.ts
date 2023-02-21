@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { PrimeNGConfig } from 'primeng/api';
 
 @Component({
   selector: 'app-root',
@@ -6,15 +7,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'pipesAppV2';
+  constructor(private primengConfig: PrimeNGConfig) {}
 
-  nombre: string = 'mAtI tEcIcI';
-  valor: number = 34;
-  objeto: object = {nombre: this.nombre, edad: 34}
-
-  mostrarNombre() {
-    console.log(this.nombre);
-    console.log(this.valor);
-    console.log(this.objeto);
+  ngOnInit() {
+    this.primengConfig.ripple = true;
   }
 }
