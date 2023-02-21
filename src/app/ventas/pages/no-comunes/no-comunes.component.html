@@ -9,7 +9,9 @@
 
     <div class="col md:col-6 sm:col-9">
         <p-fieldset legend="i18nSelect Pipe">
-            Content
+            Saludos {{nombre}}, es un placer 
+            {{genero | i18nSelect: invitacionMapa}} 
+            a nuestro evento
         </p-fieldset>
     </div>
 
@@ -20,3 +22,9 @@
     </div>
 
 </div>
+
+<!-- <p-fieldset legend="i18nSelect Pipe">
+    Saludos {{nombre}}, es un placer 
+    {{gender | i18nSelect: inviteMap}} 
+    a nuestro evento
+</p-fieldset> -->

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { PrimeNGConfig } from 'primeng/api';
+
 
 @Component({
   selector: 'app-no-comunes',
@@ -8,10 +8,12 @@ import { PrimeNGConfig } from 'primeng/api';
   ]
 })
 export class NoComunesComponent {
-  
-  constructor(private primengConfig: PrimeNGConfig) {}
 
-  ngOnInit() {
-    this.primengConfig.ripple = true;
-  }
+  nombre: string = 'Pepe';
+  genero: string = 'masculino';
+  invitacionMapa: any = {'femenino': 'invitarla', 'masculino': 'invitarlo'};
+
+  // gender: string = 'male';
+  // inviteMap: any = {'male': 'Invite him.', 'female': 'Invite her.', 'other': 'Invite them.'};
+
 }
