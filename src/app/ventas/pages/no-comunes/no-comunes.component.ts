@@ -48,4 +48,19 @@ export class NoComunesComponent {
     direccion: 'San Lorenzo 135'
   }
 
+  //Json Pipe
+  heroes: object[] = [
+    {
+      nombre: 'Superman',
+      vuela: true
+    },
+    {
+      nombre: 'Robin',
+      vuela: false
+    },{
+      nombre: 'Aquaman',
+      vuela: false
+    },
+  ]
+
 }
