@@ -13,9 +13,10 @@ export class NoComunesComponent {
   nombre: string = 'Pepe';
   genero: string = 'masculino';
   invitacionMapa: any = {'femenino': 'invitarla', 'masculino': 'invitarlo'};
+  bandera:string = 'macho';
 
   //i18nPlural
-  clientes: string[] = ['k','g','c'];
+  clientes: string[] = ['k','g','c','h','g','h'];
   clientesMap: any = {
     '=0': 'no tenemos ningun cliente esperando.',
     '=1':'tenemos un cliente esperando.',
@@ -23,4 +24,21 @@ export class NoComunesComponent {
     'other':'tenemos # clientes esperando.'
   }
   
+  cambiarNombre() {
+    if (this.bandera === 'macho') {
+      this.nombre = 'Julieta';
+      this.genero = 'femenino';
+      this.bandera = 'hembra';
+    }else if (this.bandera === 'hembra'){
+      this.nombre = 'Pepe';
+      this.genero = 'masculino';
+      this.bandera = 'macho';
+    };
+  }
+
+  borrarCliente() {
+    if ( this.clientes.length > 0 )
+    this.clientes.pop();
+  };
+
 }
