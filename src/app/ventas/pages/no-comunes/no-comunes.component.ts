@@ -41,4 +41,11 @@ export class NoComunesComponent {
     this.clientes.pop();
   };
 
+  //KeyValue Pipe
+  persona = {
+    nombre: 'Mati',
+    edad: 34,
+    direccion: 'San Lorenzo 135'
+  }
+
 }
