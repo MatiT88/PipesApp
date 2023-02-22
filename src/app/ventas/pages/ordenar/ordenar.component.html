@@ -1,1 +1,10 @@
-<p>ordenar works!</p>
+<div class="text-layout">
+    <h1>Pipes Personalizados</h1>
+    <p>Pipes creados por {{ name | mayusculas:enMayusculas }}.</p>
+</div>
+
+<button pButton
+        pRipple
+        type="button"
+        label="Cambiar nombre" class="p-button-rounded"
+        (click)="cambiarNombre()"></button>

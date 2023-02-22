@@ -8,4 +8,11 @@ import { Component } from '@angular/core';
 })
 export class OrdenarComponent {
 
+  name: string = 'mati';
+
+  enMayusculas: boolean = false;
+
+  cambiarNombre() {
+    this.enMayusculas = !(this.enMayusculas);
+  }
 }
