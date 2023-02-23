@@ -8,9 +8,5 @@ export class MayusculasPipe implements PipeTransform {
         return (enMayusculas)
         ? value.toUpperCase()
         : value.toLowerCase(); 
-            
-        
-        
     }
-
 }
